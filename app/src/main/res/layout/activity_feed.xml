@@ -28,6 +28,7 @@
             android:layout_width="130dp"
             app:cardCornerRadius="10dp"
             android:layout_margin="10dp"
+            android:background="@color/white"
             android:layout_height="110dp"
             >
             <ImageView
@@ -88,11 +89,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="14dp"
             android:textSize="15dp"
             android:layout_marginBottom="6dp"
             android:textColor="#919191"
-            android:text="Mon 25.2min"
+            android:text="Aug 9.2min"
         />
             <ImageView
                 android:layout_width="25dp"
