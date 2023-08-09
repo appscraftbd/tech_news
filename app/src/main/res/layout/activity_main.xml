@@ -6,15 +6,32 @@
     android:layout_height="match_parent"
     android:background="#E6E6E6"
     tools:context=".MainActivity">
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+      android:background="#ABABAB"
+       android:id="@+id/view"
+      />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+      android:text="T E C H  N E W S"
+      android:layout_margin="10dp"
+      android:textSize="25dp"
+      android:textStyle="bold"
+      android:textColor="@color/white"
+      />
+
 
 
    <ListView
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
-       android:layout_marginTop="5dp"
+       android:layout_marginTop="7dp"
        android:id="@+id/listView"
        android:listSelector="@android:color/transparent"
        android:divider="@null"
+       android:layout_below="@+id/view"
        />
 
 </RelativeLayout>
