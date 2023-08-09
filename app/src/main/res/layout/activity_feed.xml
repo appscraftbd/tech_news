@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".feed">
+
+    <LinearLayout
+        android:id="@+id/newsbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:background="@drawable/itemback"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="130dp"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp"
+            android:layout_height="110dp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/nimage"
+                android:id="@+id/banner"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:text="
+স্যামসাংয়ের এই ফোনে ৫০ মেগাপিক্সেলের ক্যামেরা আছে"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:paddingRight="7dp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textColor="#555555"
+                />
+
+            <TextView
+                android:id="@+id/textDes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_marginTop="3dp"
+                android:paddingRight="7dp"
+                android:textColor="#8E8E8E"
+                android:text="৫০ মেগাপিক্সেল ক্যামেরার ফোন আনল স্যামসাং। মডেল স্যামসাং গ্যালাক্সি এ৩৪। হ্যান্ডসেটটিতে শক্তিশালী ব্যাটারি দিয়েছে দক্ষিণ কোরিয়ার এই প্রযুক্তি পণ্য নির্মাতা প্রতিষ্ঠান। কোম্পানি দাবি করছে এই ফোন একবার চার্জ দিলে টানা দুই দিন চলবে। জানুন এই ফোনের বাদবাকি স্পেসিফিকেশন।" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"
+            android:layout_marginBottom="6dp"
+            android:textColor="#919191"
+            android:text="Mon 25.2min"
+        />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/more"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="-10dp"
+                android:id="@+id/itemMore"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                />
+            <ImageView
+                android:id="@+id/itemSave"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/save"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="44dp"
+                android:layout_marginTop="-10dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                />
+
+        </RelativeLayout>
+
+
+   </LinearLayout>
+</RelativeLayout>
